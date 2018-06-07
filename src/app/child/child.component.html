@@ -1,0 +1,6 @@
+<div [ngClass]="style">
+{{childTitle}}
+<li *ngFor="let x of thing">{{x}}</li>
+Add an item<input type="text" [(ngModel)]="item">
+<button (click)="sendToParent()">add item</button>
+</div>
